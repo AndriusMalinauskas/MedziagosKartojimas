@@ -12,24 +12,22 @@ namespace MedziagosKartojimas
         public string Zodis { get; set; }
         public double DoubleSkaicius { get; set; }
         public AKlase AObjektas { get; set; }
+
         public CKlase(string name) : base (name)
         {
 
         }
-        public CKlase()
-        {
-
-        }
-        public CKlase(int skaicius)
+        public CKlase(string name, int skaicius) : base(name)
         {
             Skaicius = skaicius;
         }
-        public CKlase(int skaicius, string zodis)
+        
+        public CKlase(string name, int skaicius, string zodis) : base(name)
         {
             Skaicius = skaicius;
             Zodis = zodis;
         }
-        public CKlase(int skaicius, string zodis, double doubleSkaicius, AKlase aObjektas)
+        public CKlase(string name, int skaicius, string zodis, double doubleSkaicius, AKlase aObjektas) : base(name)
         {
             Skaicius = skaicius;
             Zodis = zodis;
