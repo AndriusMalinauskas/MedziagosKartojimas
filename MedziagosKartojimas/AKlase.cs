@@ -8,9 +8,10 @@ namespace MedziagosKartojimas
 {
     class AKlase : BaseClass
     {
+        
         public AKlase(string name) : base( name)
         {
-           
+            
         }
         public override int NameKodas(int a)
         {
@@ -27,7 +28,7 @@ namespace MedziagosKartojimas
             var zodis = "";
             foreach (var item in Name)
             {
-                if (item == 'a' || item == 'e' || item == 'i' || item == 'u' || item == 'o' || item == 'y')
+                if (Balses.Contains(item))
                 {
                     zodis += (int)item;
                 }

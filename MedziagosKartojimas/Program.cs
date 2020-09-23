@@ -13,7 +13,12 @@ namespace MedziagosKartojimas
             var name = new AKlase("mama");
             Console.WriteLine(name.NameKodas(2));
             Console.WriteLine(name.NameMetodas());
-
+            Console.WriteLine();
+            var nameB = new BKlase("mama");
+            Console.WriteLine(nameB.ZodisBeBalsiu());
+            Console.WriteLine(nameB.ZodisBePriebalsiu());
+            Console.WriteLine(nameB.ZodisSuPakeistomisBalsemis('d'));
+            Console.WriteLine(nameB.ZodisSuPakeistomisPriebalsemis(1));
             Console.ReadKey();
         }
     }
